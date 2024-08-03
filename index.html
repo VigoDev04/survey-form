@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a survey form page">
+    <title>Puppy Rescue survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body-overlay">
+    </div>
+    <main>
+        <h1 id="title">Puppy Rescue Survey Form</h1>
+        <p id="description">Thank you for helping us save more puppies</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name<input type="text" id="name" name="full-name" required placeholder="Enter your full name"></label>
+            <label for="email" id="email-label">Email<input type="email" name="email" id="email" required placeholder="Enter your email"></label>
+            <label for="number" id="number-label">Age <strong>(optional)</strong><input type="number" name="age" id="number" min="18" max="120" placeholder="Age"></label>
+            <label for="dropdown">Why are you helping us?
+                <select name="will-info" id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">I love puppies</option>
+                    <option value="2">I think you're doing a good job</option>
+                    <option value="3">I want a better world</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <fieldset class="flex">
+                <legend>Would you recommend Puppy Rescue to a friend?</legend>
+                <label for="yes"><input type="radio" name="share-question" id="yes" value="yes">For sure</label>
+                <label for="maybe"><input type="radio" name="share-question" id="maybe" value="maybe">Could be</label>
+                <label for="no"><input type="radio" name="share-question" id="no" value="no">Not sure about it</label>
+            </fieldset>
+            <fieldset class="flex">
+                <legend>What should we improve? <strong>(Check all that apply)</strong></legend>
+                <label for="tip1"><input type="checkbox" name="improve-tip" id="tip1" value="1">Rescue Projects</label>
+                <label for="tip2"><input type="checkbox" name="improve-tip" id="tip2" value="2">Grocery Projects</label>
+                <label for="tip3"><input type="checkbox" name="improve-tip" id="tip3" value="3">Medical Projects</label>
+                <label for="tip4"><input type="checkbox" name="improve-tip" id="tip4" value="4">Shelter Security</label>
+                <label for="tip5"><input type="checkbox" name="improve-tip" id="tip5" value="5">Furniture</label>
+                <label for="tip6"><input type="checkbox" name="improve-tip" id="tip6" value="6">Health Insurance</label>
+                <label for="tip7"><input type="checkbox" name="improve-tip" id="tip7" value="7">Toys</label>
+                <label for="tip8"><input type="checkbox" name="improve-tip" id="tip8" value="8">Puppy Contest</label>
+            </fieldset>
+            <label for="comments">Any other suggestions?<textarea name="additional-comments" id="comments" cols="30" rows="10"></textarea></label>
+            <input type="submit" id="submit" value="APPLY">
+        </form>
+    </main>
+</body>
+</html>
