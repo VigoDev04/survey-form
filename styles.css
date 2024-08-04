@@ -55,10 +55,24 @@ input, textarea, select {
     height: 35px;
     border-radius: 5px;
     border: none;
+    border-bottom: 4px solid #fdebd0;
+    transition: border-bottom-color, 0.2s;
     margin: 10px 0 20px 0;
     font-size: 0.8em;
     color: #333;
     font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-bottom-color: #a40;
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: none;
+}
+
+input[type="radio"]:focus-visible, input[type="checkbox"]:focus-visible, input[type="submit"]:focus-visible {
+    outline: auto;
 }
 
 textarea {
@@ -105,6 +119,7 @@ input[type="submit"] {
     border-radius: 20px;
     display: block;
     margin: auto;
+    border: none;
     transition: background-color 0.2s;
     background-color: #a40;
     color: #fff;
@@ -114,4 +129,5 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #dc7633bb;
+    border: none;
 }
